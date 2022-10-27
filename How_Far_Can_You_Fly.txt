@@ -1,6 +1,6 @@
 --Made by MorteX
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("How Far Can You ly Script", "Synapse")
+local Window = Library.CreateLib("How Far Can You Fly Script", "Synapse")
 
 local Main = Window:NewTab("Main")
 local MainSection = Main:NewSection("STUD Teleport")
