@@ -1,0 +1,28 @@
+--Made by MorteX
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("TEST SCRIPT", "Synapse")
+
+local Main = Window:NewTab("Main")
+local MainSection = Main:NewSection("TEST Teleport")
+
+MainSection:NewButton("TEST1 Teleport", "Teleport you to TEST1", function()
+    local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+    local office = CFrame.new(-7, 4, -21)
+    pl.CFrame = office
+end)
+
+MainSection:NewButton("TEST2 Teleport", "Teleport you to TEST2", function()
+    local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+    local office = CFrame.new(302, 4, 322)
+    pl.CFrame = office
+end)
+
+
+local Main = Window:NewTab("Credits")
+local MainSection = Main:NewSection("Thanks For Using :D")
+
+MainSection:NewButton("Made by MorteX", "That's all")
+
+local MainSection = Main:NewSection("DISCORD")
+
+MainSection:NewButton("https://discord.gg/wFsssG4zyk")
