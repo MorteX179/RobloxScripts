@@ -46,11 +46,6 @@ MainSection:NewButton("Delete VIP Trigger", "Delete VIP Trigger", function()
             getsenv(game.Workspace.VIP.Roof:Destroy())
 end)
 
-MainSection:NewButton("Delete VIP Trigger 2", "Delete VIP Trigger 2", function()
-            getsenv(game.Workspace.VIP.Union:Destroy())
-end)
-
-
 local MainSection = Main:NewSection("VIP")
 
 MainSection:NewButton("VIP Place", "Teleport you to VIP Place. Delete everythinh first", function()
