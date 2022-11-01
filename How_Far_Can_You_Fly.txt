@@ -32,26 +32,11 @@ MainSection:NewButton("Rebirth Shop", "Teleport you to Rebirth Shop", function()
 end)
 
 local Main = Window:NewTab("Misc")
-local MainSection = Main:NewSection("VIP Delete (Use Before Teleporting To VIP Place)")
-
-MainSection:NewButton("Delete VIP Doors", "Delete VIP Doors", function()
-            getsenv(game.Workspace.VIP.D:Destroy())
-end)
-
-MainSection:NewButton("Delete VIP Ban Trigger", "Delete VIP Ban Trigger", function()
-            getsenv(game.Workspace.VIP.Part:Destroy())
-end)
-
-MainSection:NewButton("Delete VIP Trigger", "Delete VIP Trigger", function()
-            getsenv(game.Workspace.VIP.Roof:Destroy())
-end)
 
 local MainSection = Main:NewSection("VIP")
 
-MainSection:NewButton("VIP Place", "Teleport you to VIP Place. Delete everythinh first", function()
-    local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
-    local office = CFrame.new(-140.5, 3.1, 17.325)
-    pl.CFrame = office
+MainSection:NewButton("DELETED", "Deleted due to new ban system", function()
+   
 end)
 
 local MainSection = Main:NewSection("Teleports To Secrets")
