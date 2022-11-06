@@ -19,6 +19,7 @@ end)
 
 local Main = Window:NewTab("AFK")
 local MainSection = Main:NewSection("AFK Money Maker")
+MainSection:NewButton("Money Maker", "Teleport you to 210K STUD over and over. Rejoin to stop", function()
 
 n = 1
 
