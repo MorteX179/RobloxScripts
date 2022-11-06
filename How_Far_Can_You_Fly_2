@@ -1,0 +1,103 @@
+--Made by MorteX
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("How Far Can You Fly Script", "Synapse")
+
+local Main = Window:NewTab("Main")
+local MainSection = Main:NewSection("STUD Teleport")
+
+MainSection:NewButton("Teleport to Last Active STUD Zone", "Teleport you to 210K STUD cross the line first.", function()
+    local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+    local stud = CFrame.new(-3, 3, -146737)
+    pl.CFrame = stud
+end)
+
+MainSection:NewButton("Near Line Teleport", "Teleport you near line", function()
+    local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+    local line = CFrame.new(-19, 3, -26)
+    pl.CFrame = line
+end)
+
+
+local MainSection = Main:NewSection("Shop Teleport")
+
+MainSection:NewButton("SM Shop", "Teleport you to SM Shop", function()
+    local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+    local Shop = CFrame.new(81, 4, 53)
+    pl.CFrame = shop
+end)
+
+MainSection:NewButton("Rebirth Shop", "Teleport you to Rebirth Shop", function()
+    local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+    local rebirth = CFrame.new(47, 3, 83)
+    pl.CFrame = rebirth
+end)
+
+local Main = Window:NewTab("AFK")
+local MainSection = Main:NewSection("AFK")
+
+MainSection:NewButton("AFK Money Maker", "Teleport you to 210K STUD over and over. Rejoin to stop", function()
+
+n = 1
+
+while (n < 1000)
+do
+wait (3.5)
+
+local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+local afk= CFrame.new(-19, 3, -26)
+pl.CFrame = afk
+
+wait(.25)
+
+local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+local afk1= CFrame.new(-3, 3, -146737)
+pl.CFrame = afk1
+
+n = n + 1
+
+end
+
+end)
+
+local Main = Window:NewTab("Misc")
+
+local MainSection = Main:NewSection("VIP")
+
+MainSection:NewButton("DELETED", "Deleted due to new ban system", function()
+   
+end)
+
+local MainSection = Main:NewSection("Teleports To Secrets")
+
+MainSection:NewButton("???", "Teleport you to ???", function()
+    local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+    local s1 = CFrame.new(68, 3, 108)
+    pl.CFrame = s1
+end)
+
+
+MainSection:NewButton("How did you get here?", "Teleport you to invisible platform", function()
+    local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+    local s2 = CFrame.new(107.5, -40.65, -2.2)
+    pl.CFrame = s2
+end)
+
+
+
+MainSection:NewButton("Backrooms Entrace", "Teleport you to Backrooms Entrace", function()
+    local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+    local s3 = CFrame.new(111, 3, 52)
+    pl.CFrame = s3
+end)
+
+MainSection:NewButton("Backrooms Exit", "Teleport you to Backrooms Exit", function()
+    local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+    local s4 = CFrame.new(95561, 4, -74)
+    pl.CFrame = s4
+end)
+
+
+local Main = Window:NewTab("Credits")
+local MainSection = Main:NewSection("Thanks For Using :D")
+
+MainSection:NewButton("Made by MorteX", "That's all")
