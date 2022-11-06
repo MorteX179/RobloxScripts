@@ -44,7 +44,7 @@ do
 wait (7)
 
 local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
-local afk= CFrame.new(0, 3, -30)
+local afk= CFrame.new(-26, 3, -30)
 pl.CFrame = afk
 
 wait(.25)
@@ -101,3 +101,6 @@ local Main = Window:NewTab("Credits")
 local MainSection = Main:NewSection("Thanks For Using :D")
 
 MainSection:NewButton("Made by MorteX", "That's all")
+
+local MainSection = Main:NewSection("Discord")
+MainSection:NewButton("https://discord.gg/wFsssG4zyk", "Just Join")
