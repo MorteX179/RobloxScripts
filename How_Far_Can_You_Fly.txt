@@ -17,6 +17,21 @@ MainSection:NewButton("Near Line Teleport", "Teleport you near line", function()
     pl.CFrame = line
 end)
 
+
+local MainSection = Main:NewSection("Shop Teleport")
+
+MainSection:NewButton("SM Shop", "Teleport you to SM Shop", function()
+    local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+    local Shop = CFrame.new(81, 4, 53)
+    pl.CFrame = shop
+end)
+
+MainSection:NewButton("Rebirth Shop", "Teleport you to Rebirth Shop", function()
+    local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+    local rebirth = CFrame.new(47, 3, 83)
+    pl.CFrame = rebirth
+end)
+
 local Main = Window:NewTab("AFK")
 local MainSection = Main:NewSection("AFK")
 
@@ -42,20 +57,6 @@ n = n + 1
 
 end
 
-end)
-
-local MainSection = Main:NewSection("Shop Teleport")
-
-MainSection:NewButton("SM Shop", "Teleport you to SM Shop", function()
-    local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
-    local Shop = CFrame.new(81, 4, 53)
-    pl.CFrame = shop
-end)
-
-MainSection:NewButton("Rebirth Shop", "Teleport you to Rebirth Shop", function()
-    local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
-    local rebirth = CFrame.new(47, 3, 83)
-    pl.CFrame = rebirth
 end)
 
 local Main = Window:NewTab("Misc")
