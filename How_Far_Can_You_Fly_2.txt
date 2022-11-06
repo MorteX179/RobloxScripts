@@ -41,10 +41,10 @@ n = 1
 
 while (n < 1000)
 do
-wait (3.5)
+wait (7)
 
 local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
-local afk= CFrame.new(-19, 3, -26)
+local afk= CFrame.new(0, 3, -30)
 pl.CFrame = afk
 
 wait(.25)
