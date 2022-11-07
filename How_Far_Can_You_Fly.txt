@@ -103,4 +103,4 @@ local MainSection = Main:NewSection("Thanks For Using :D")
 MainSection:NewButton("Made by MorteX", "That's all")
 
 local MainSection = Main:NewSection("Discord")
-MainSection:NewButton("https://discord.gg/wFsssG4zyk", "Just Join")
+MainSection:NewButton("https://discord.gg/DMnGBswk", "Just Join")
